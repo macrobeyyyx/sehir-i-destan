@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="tableModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masa Numarası Seçin</h2>
+            <input type="number" id="tableNumberInput" min="1" max="50" placeholder="1-50 arası bir sayı girin">
+            <button class="btn" onclick="setTableNumber()">Onayla</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Şehiri Destan</h2>
+            <ul id="categories"></ul>
+        </div>
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Arama (Min.3 Karakter)">
+            </div>
+            <div class="alert">
+                Bu bir beta (test edilen) bir sürümdür kararlı değildir hatalar olursa lütfen yetkili servise belirtiniz..
+            </div>
+            <h2 id="selectedCategory">Tüm Kahvaltılık Ürünler</h2>
+            <div class="menu-items" id="menuItems"></div>
+            <div id="selectedItems">
+                <h3>Seçilen Ürünler - Masa <span id="tableNumberDisplay"></span></h3>
+                <ul id="selectedItemsList"></ul>
+                <p>Toplam: ₺<span id="totalPrice">0.00</span></p>
+            </div>
+            <div id="qrcode"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
