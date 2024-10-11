@@ -186,6 +186,10 @@ li:hover {
 .signature {
     text-align: center; /* Metni ortalar */
     margin-top: 20px; /* Üstten boşluk bırakır */
+    padding: 10px; /* İç boşluk ekler */
+    background-color: #f9f9f9; /* Arka plan rengi (isteğe bağlı) */
+    border-radius: 5px; /* Kenarları yuvarlatır (isteğe bağlı) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge (isteğe bağlı) */
 }
 
 .signature p {
