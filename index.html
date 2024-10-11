@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- <link rel="stylesheet" href="style.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="tableModal" class="modal">
@@ -37,9 +37,15 @@
                 <ul id="selectedItemsList"></ul>
                 <p>Toplam: ₺<span id="totalPrice">0.00</span></p>
             </div>
+
+            <!-- İmza Ekleme -->
+            <div class="signature">
+                <p>Mert Demir Tarafından Geliştirilmiştir</p>
+            </div>
+
             <div id="qrcode"></div>
         </div>
     </div>
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
