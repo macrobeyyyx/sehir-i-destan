@@ -183,3 +183,13 @@ li:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.signature {
+    text-align: center; /* Metni ortalar */
+    margin-top: 20px; /* Üstten boşluk bırakır */
+}
+
+.signature p {
+    font-family: 'Roboto', sans-serif; /* Font ailesini ayarlar */
+    font-size: 18px; /* Yazı boyutunu ayarlar */
+    color: #333; /* Yazı rengini ayarlar */
+}
